@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu — Tres Marias Taqueria, Houston TX</title>
+<meta name="description" content="The Tres Marias menu: quesabirria, tacos al pastor, gorditas, sopes, tortas, parrillada, menudo, breakfast and aguas frescas. Handmade tortillas. Call (713) 987-9391.">
+<meta name="theme-color" content="#2b1512">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23e4502b'/><text y='72' x='50' text-anchor='middle' font-family='Georgia,serif' font-weight='bold' font-size='58' fill='%23fbf1df'>3</text></svg>">
+</head>
+<body>
+
+<div class="papel" aria-hidden="true">
+  <svg viewBox="0 0 1200 42" preserveAspectRatio="none">
+    <defs><pattern id="pp" x="0" y="0" width="120" height="42" patternUnits="userSpaceOnUse">
+      <path d="M0 0h120v10l-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8z" fill="currentColor"/>
+      <circle cx="30" cy="27" r="4" fill="currentColor"/><circle cx="90" cy="27" r="4" fill="currentColor"/>
+      <path d="M52 20h16l-8 14z" fill="currentColor"/>
+    </pattern></defs>
+    <rect width="1200" height="42" fill="url(#pp)"/>
+  </svg>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html"><span class="brand__num">3</span><span class="brand__txt">Tres Marias<em>Taqueria · Houston</em></span></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="is-active">Menu</a>
+    <a href="story.html">Nuestra Casa</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+  <a class="btn btn--chili" href="tel:+17139879391">(713) 987-9391</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="sheet" id="sheet">
+  <a href="index.html">Home</a>
+  <a href="menu.html" class="is-active">Menu</a>
+  <a href="story.html">Nuestra Casa</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="visit.html">Visit</a>
+  <a class="sheet__cta" href="tel:+17139879391">Call to order →</a>
+</div>
+
+<main>
+  <section class="pagehero">
+    <div class="pagehero__bg"><img src="images/pastor.jpg" alt=""></div>
+    <div class="pagehero__inner">
+      <p class="crumb"><a href="index.html">Home</a> / <span>Menu</span></p>
+      <h1>La carta.<br><em>Hecho aquí.</em></h1>
+      <p class="pagehero__lede">Tacos, birria, gorditas, tortas, platos and breakfast — everything made to order on tortillas we press ourselves. Prices below are from our current online menu.</p>
+      <ul class="pagehero__meta">
+        <li>Handmade tortillas</li>
+        <li>Call to order</li>
+        <li>DoorDash</li>
+        <li>Dine-in</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- signature dishes with photos -->
+  <section class="psec psec--paper2">
+    <div class="psec__inner">
+      <div class="psec__head">
+        <p class="kicker reveal">Los favoritos</p>
+        <h2 class="h2 reveal">What everybody<br><em>orders.</em></h2>
+      </div>
+      <div class="mcards">
+        <article class="mcard reveal">
+          <div class="mcard__img"><img src="images/birria.jpg" alt="Quesabirria tacos with consomé" loading="lazy"></div>
+          <div class="mcard__body">
+            <h3>Quesabirria</h3>
+            <p>Four birria tacos griddled with cheese, chopped onion and cilantro, with a cup of consomé for dipping.</p>
+            <span class="mcard__price">$13.99</span>
+          </div>
+        </article>
+        <article class="mcard reveal">
+          <div class="mcard__img"><img src="images/pastor.jpg" alt="Tacos al pastor" loading="lazy"></div>
+          <div class="mcard__body">
+            <h3>Tacos de Pastor</h3>
+            <p>Carved off the trompo, with pineapple, onion and cilantro on a handmade corn tortilla.</p>
+            <span class="mcard__price">$12.99</span>
+          </div>
+        </article>
+        <article class="mcard reveal">
+          <div class="mcard__img"><img src="images/gorditas.jpg" alt="Gorditas with salsa and queso" loading="lazy"></div>
+          <div class="mcard__body">
+            <h3>Gorditas &amp; Sopes</h3>
+            <p>Thick hand-formed masa, griddled and stuffed to order with beans, salsa, queso fresco and crema.</p>
+            <span class="mcard__price">Ask today’s price</span>
+          </div>
+        </article>
+        <article class="mcard reveal">
+          <div class="mcard__img"><img src="images/menudo.jpg" alt="Bowl of menudo with garnishes" loading="lazy"></div>
+          <div class="mcard__body">
+            <h3>Menudo</h3>
+            <p>The weekend tradition — red chile broth with hominy and tripe, onion, cilantro, oregano and lime.</p>
+            <span class="mcard__price">Ask today’s price</span>
+          </div>
+        </article>
+        <article class="mcard reveal">
+          <div class="mcard__img"><img src="images/basket.jpg" alt="Fresh handmade corn tortillas" loading="lazy"></div>
+          <div class="mcard__body">
+            <h3>Tortillas by the dozen</h3>
+            <p>Corn pressed on the comal, flour rolled by hand. Take a stack home — they’re the reason people come back.</p>
+            <span class="mcard__price">Ask today’s price</span>
+          </div>
+        </article>
+        <article class="mcard reveal">
+          <div class="mcard__img"><img src="images/drinks.jpg" alt="Aguas frescas in glass jars" loading="lazy"></div>
+          <div class="mcard__body">
+            <h3>Aguas Frescas</h3>
+            <p>Made in-house every day. Ask what’s fresh — it changes with the season and the mood.</p>
+            <span class="mcard__price">Ask today’s price</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- full list -->
+  <section class="psec psec--dark">
+    <div class="psec__inner">
+      <div class="psec__head">
+        <p class="kicker kicker--light reveal">Todo el menú</p>
+        <h2 class="h2 h2--light reveal">The rest of it.</h2>
+      </div>
+      <div class="menu__grid">
+        <div class="menu__col reveal">
+          <h3>Tacos &amp; Birria</h3>
+          <ul>
+            <li><span class="d"><b>Quesabirria</b><small>Four tacos, cheese, onion, cilantro, consomé</small></span><span class="p">$13.99</span></li>
+            <li><span class="d"><b>Tacos de Pastor</b><small>Trompo, pineapple, onion, cilantro</small></span><span class="p">$12.99</span></li>
+            <li><span class="d"><b>Birria Tacos</b><small>Slow-braised beef, onion, cilantro, lime</small></span><span class="p">$13.99</span></li>
+            <li><span class="d"><b>Flautas de Pollo</b><small>Crisp rolled taquitos, crema, salsa, queso</small></span><span class="p">$12.99</span></li>
+          </ul>
+        </div>
+        <div class="menu__col reveal">
+          <h3>Platos</h3>
+          <ul>
+            <li><span class="d"><b>Parrillada</b><small>For the table — grilled meats, tortillas, fixings</small></span><span class="p">$19.99</span></li>
+            <li><span class="d"><b>Burrito</b><small>Rice, beans, your choice of meat, griddled</small></span><span class="p">$12.99</span></li>
+            <li><span class="d"><b>Quesadilla Grande</b><small>Loaded and melted, salsa and crema</small></span><span class="p">$12.99</span></li>
+            <li><span class="d"><b>Pechuga Empanizada</b><small>Breaded chicken with rice and beans</small></span><span class="p">Ask</span></li>
+          </ul>
+        </div>
+        <div class="menu__col reveal">
+          <h3>Tortas &amp; Antojitos</h3>
+          <ul>
+            <li><span class="d"><b>Fajita Torta</b><small>Our #12 — stacked on a toasted roll</small></span><span class="p">Ask</span></li>
+            <li><span class="d"><b>Gorditas</b><small>Thick, griddled, stuffed to order</small></span><span class="p">Ask</span></li>
+            <li><span class="d"><b>Sopes &amp; Huaraches</b><small>Hand-formed masa, beans, salsa, queso</small></span><span class="p">Ask</span></li>
+            <li><span class="d"><b>Chilaquiles</b><small>Red or green, crema and queso fresco</small></span><span class="p">Ask</span></li>
+          </ul>
+        </div>
+        <div class="menu__col reveal">
+          <h3>Desayuno &amp; Bebidas</h3>
+          <ul>
+            <li><span class="d"><b>Huevos al Gusto</b><small>Rancheros, a la mexicana, or con jamón</small></span><span class="p">Ask</span></li>
+            <li><span class="d"><b>Menudo</b><small>Weekend tradition, all the sides</small></span><span class="p">Ask</span></li>
+            <li><span class="d"><b>Aguas Frescas</b><small>Made in-house — ask what’s fresh</small></span><span class="p">Ask</span></li>
+            <li><span class="d"><b>Cafecito</b><small>The way it should be</small></span><span class="p">Ask</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu__foot">
+        <a class="btn btn--marigold btn--lg" href="tel:+17139879391">Call (713) 987-9391</a>
+        <a class="btn btn--ghost btn--lg" href="https://www.doordash.com/store/taqueria-tres-marias-23657611" target="_blank" rel="noopener">Order on DoorDash</a>
+        <p>Prices come from our current online menu and can change — call us for today’s specials.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="psec psec--paper2">
+    <div class="psec__inner">
+      <p class="kicker reveal">Catering</p>
+      <h2 class="h2 reveal" style="margin-bottom:16px">Feeding a crowd?</h2>
+      <p class="psec__lead reveal" style="max-width:60ch;margin-bottom:22px">Trays of tacos, platters and family packs — call ahead and we’ll have it packed and ready. Big orders are best with a day’s notice.</p>
+      <a class="btn btn--chili btn--lg" href="tel:+17139879391">Plan a tray order</a>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="band__inner">
+      <div>
+        <h2>Hungry yet?</h2>
+        <p>Call, drive through, or order delivery. We’re open seven days from 8 AM.</p>
+      </div>
+      <div class="band__actions">
+        <a class="btn btn--chili btn--lg" href="tel:+17139879391">Call to order</a>
+        <a class="btn btn--ghost btn--lg" href="gallery.html">See the food</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <span class="brand__txt brand__txt--lg">Tres Marias<em>Taqueria · Houston</em></span>
+      <p>Family-run Mexican kitchen on Telephone Road.<br>Handmade tortillas, every single day.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="is-active">Menu</a>
+      <a href="story.html">Nuestra Casa</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="visit.html">Visit</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="tel:+17139879391">(713) 987-9391</a>
+      <a href="mailto:tresmariasmexico7@gmail.com">Email us</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Taqueria+Tres+Marias+10414+Telephone+Rd+Houston+TX" target="_blank" rel="noopener">Directions</a>
+    </div>
+    <div class="footer__col">
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/tres_marias_taqueria" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/TresMariasMatamoros" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.tiktok.com/@taqueriatresmarias1" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year">2026</span> Tres Marias Taqueria · 10414 Telephone Rd, Houston, TX</span>
+    <span class="footer__tag">¡Buen provecho!</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><button class="lightbox__close" aria-label="Close">×</button><img alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -6,23 +6,19 @@
 <title>Tres Marias Taqueria — Handmade Tortillas on Telephone Rd, Houston</title>
 <meta name="description" content="Tres Marias Taqueria is a mom &amp; pop Mexican kitchen on Telephone Road in Houston. Matamoros-style tacos, quesabirria, handmade corn and flour tortillas. 4.7 stars from 369 Google reviews.">
 <meta name="theme-color" content="#2b1512">
-<meta property="og:title" content="Tres Marias Taqueria — Houston, TX">
-<meta property="og:description" content="Matamoros-style tacos, quesabirria and tortillas made by hand every day. 4.7★ from 369 Google reviews.">
-<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23e4502b'/><text y='72' x='50' text-anchor='middle' font-family='Georgia,serif' font-weight='bold' font-size='58' fill='%23fbf1df'>3</text></svg>">
 </head>
 <body>
 
-<!-- papel picado -->
 <div class="papel" aria-hidden="true">
   <svg viewBox="0 0 1200 42" preserveAspectRatio="none">
     <defs>
       <pattern id="pp" x="0" y="0" width="120" height="42" patternUnits="userSpaceOnUse">
-        <rect width="120" height="42" fill="none"/>
         <path d="M0 0h120v10l-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8z" fill="currentColor"/>
         <circle cx="30" cy="27" r="4" fill="currentColor"/>
         <circle cx="90" cy="27" r="4" fill="currentColor"/>
@@ -33,17 +29,17 @@
   </svg>
 </div>
 
-<!-- ── NAV ─────────────────────────────────────────────── -->
 <header class="nav" id="nav">
-  <a class="brand" href="#top">
+  <a class="brand" href="index.html">
     <span class="brand__num">3</span>
     <span class="brand__txt">Tres Marias<em>Taqueria · Houston</em></span>
   </a>
   <nav class="nav__links" aria-label="Primary">
-    <a href="#story">Nuestra Casa</a>
-    <a href="#menu">Menu</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#visit">Visit</a>
+    <a href="index.html" class="is-active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="story.html">Nuestra Casa</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="visit.html">Visit</a>
   </nav>
   <a class="btn btn--chili" href="tel:+17139879391">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011.1-.2 11 11 0 003.4.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.4a1 1 0 011 1 11 11 0 00.6 3.4 1 1 0 01-.2 1z" fill="currentColor"/></svg>
@@ -53,16 +49,17 @@
 </header>
 
 <div class="sheet" id="sheet">
-  <a href="#story">Nuestra Casa</a>
-  <a href="#menu">Menu</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#visit">Visit</a>
+  <a href="index.html" class="is-active">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="story.html">Nuestra Casa</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="visit.html">Visit</a>
   <a class="sheet__cta" href="tel:+17139879391">Call to order →</a>
 </div>
 
-<main id="top">
+<main>
 
-  <!-- ── HERO ──────────────────────────────────────────── -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero__grid">
       <div class="hero__copy">
@@ -79,7 +76,7 @@
         </p>
         <div class="hero__cta reveal">
           <a class="btn btn--chili btn--lg" href="tel:+17139879391">Call to order</a>
-          <a class="btn btn--outline btn--lg" href="#menu">See the menu</a>
+          <a class="btn btn--outline btn--lg" href="menu.html">See the menu</a>
         </div>
         <ul class="hero__meta reveal">
           <li><b>4.7★</b><span>369 Google reviews</span></li>
@@ -87,7 +84,6 @@
           <li><b>8 AM</b><span>open daily til 9:30</span></li>
         </ul>
       </div>
-
       <div class="hero__art">
         <figure class="hero__img reveal">
           <img src="images/hero.jpg" alt="A spread of Mexican street tacos, quesabirria with consomé, salsa and handmade tortillas" loading="eager">
@@ -98,7 +94,6 @@
     </div>
   </section>
 
-  <!-- ── STRIP ─────────────────────────────────────────── -->
   <div class="strip" aria-hidden="true">
     <div class="strip__track">
       <span>Trompo al pastor</span><i>✺</i><span>Quesabirria</span><i>✺</i><span>Menudo</span><i>✺</i>
@@ -108,19 +103,11 @@
     </div>
   </div>
 
-  <!-- ── STORY ─────────────────────────────────────────── -->
-  <section class="story" id="story">
-    <div class="story__grid">
-      <div class="story__media">
-        <figure class="frame frame--tilt reveal">
-          <img src="images/tortillas.jpg" alt="Hands pressing a fresh corn tortilla onto a hot comal" loading="lazy">
-        </figure>
-        <figure class="frame frame--small reveal">
-          <img src="images/counter.jpg" alt="Al pastor trompo spinning at the counter of the taqueria" loading="lazy">
-        </figure>
-      </div>
-
-      <div class="story__copy">
+  <!-- STORY PREVIEW -->
+  <section class="psec psec--paper" id="story">
+    <div class="psec__inner split">
+      <figure class="split__media reveal"><img src="images/tortillas.jpg" alt="Hands pressing a fresh corn tortilla onto a hot comal" loading="lazy"></figure>
+      <div class="split__body">
         <p class="kicker reveal">Nuestra casa</p>
         <h2 class="h2 reveal">Three Marias,<br><em>one kitchen.</em></h2>
         <p class="reveal">
@@ -129,89 +116,73 @@
           starts with the tortilla: corn pressed and cooked on the comal, flour rolled
           by hand, both made the same day you eat them.
         </p>
-        <p class="reveal">
-          From there it’s Matamoros cooking — trompo al pastor carved to order,
-          quesabirria with consomé for dipping, gorditas, sopes, huaraches, tortas big
-          enough to share, and menudo when the weekend calls for it. Breakfast starts
-          at eight, so yes, you can have tacos on the way to the airport.
-        </p>
-
         <div class="facts reveal">
           <div class="fact"><b>4.7★</b><span>369 Google reviews</span></div>
           <div class="fact"><b>9.4k</b><span>Instagram followers</span></div>
           <div class="fact"><b>7 days</b><span>open every week</span></div>
         </div>
+        <p style="margin-top:24px"><a class="btn btn--outline btn--lg" href="story.html">Our story →</a></p>
       </div>
     </div>
   </section>
 
-  <!-- ── MENU ──────────────────────────────────────────── -->
-  <section class="menu" id="menu">
-    <div class="menu__head">
-      <p class="kicker kicker--light reveal">La carta</p>
-      <h2 class="h2 h2--light reveal">What we’re<br><em>serving today.</em></h2>
-      <p class="menu__note reveal">
-        A taste of the menu. Everything is made to order — call ahead for pick-up,
-        or find us on DoorDash.
-      </p>
-    </div>
-
-    <div class="menu__grid">
-      <div class="menu__col reveal">
-        <h3>Tacos &amp; Birria</h3>
-        <ul>
-          <li><span class="d"><b>Quesabirria</b><small>Four birria tacos, griddled with cheese, consomé for dipping</small></span><span class="p">$13.99</span></li>
-          <li><span class="d"><b>Tacos de Pastor</b><small>Trompo, pineapple, cilantro, onion, handmade tortilla</small></span><span class="p">$12.99</span></li>
-          <li><span class="d"><b>Birria Tacos</b><small>Slow-braised beef, onion, cilantro, lime</small></span><span class="p">$13.99</span></li>
-          <li><span class="d"><b>Flautas de Pollo</b><small>Crisp rolled chicken taquitos, crema, salsa, queso</small></span><span class="p">$12.99</span></li>
-        </ul>
+  <!-- MENU TILES -->
+  <section class="psec psec--paper2">
+    <div class="psec__inner">
+      <div class="psec__head">
+        <p class="kicker reveal">La carta</p>
+        <h2 class="h2 reveal">Start with these.</h2>
+        <p class="psec__lead reveal">Three plates people order again and again. The full menu — tacos, platos, tortas, breakfast — is one tap away.</p>
       </div>
-
-      <div class="menu__col reveal">
-        <h3>Platos</h3>
-        <ul>
-          <li><span class="d"><b>Parrillada</b><small>For the table — grilled meats, tortillas, all the fixings</small></span><span class="p">$19.99</span></li>
-          <li><span class="d"><b>Burrito</b><small>Rice, beans, your choice of meat, folded and griddled</small></span><span class="p">$12.99</span></li>
-          <li><span class="d"><b>Quesadilla Grande</b><small>Loaded and melted, with salsa and crema</small></span><span class="p">$12.99</span></li>
-          <li><span class="d"><b>Menudo</b><small>Weekend tradition, served hot with all the sides</small></span><span class="p">Ask</span></li>
-        </ul>
+      <div class="tilegrid">
+        <a class="tile reveal" href="menu.html">
+          <img src="images/pastor.jpg" alt="Tacos al pastor with pineapple, cilantro and onion" loading="lazy">
+          <span class="tile__txt"><b>Tacos al Pastor</b><small>Trompo carved to order, pineapple, cilantro, onion</small><span class="tile__price">$12.99</span></span>
+        </a>
+        <a class="tile reveal" href="menu.html">
+          <img src="images/birria.jpg" alt="Quesabirria tacos with a cup of consomé" loading="lazy">
+          <span class="tile__txt"><b>Quesabirria</b><small>Four griddled tacos with consomé for dipping</small><span class="tile__price">$13.99</span></span>
+        </a>
+        <a class="tile reveal" href="menu.html">
+          <img src="images/gorditas.jpg" alt="Gorditas with beans, salsa, queso fresco and crema" loading="lazy">
+          <span class="tile__txt"><b>Gorditas</b><small>Hand-formed masa, stuffed and griddled to order</small><span class="tile__price">Ask</span></span>
+        </a>
       </div>
-
-      <div class="menu__col reveal">
-        <h3>Tortas &amp; Antojitos</h3>
-        <ul>
-          <li><span class="d"><b>Fajita Torta</b><small>Our #12 — stacked on a toasted roll</small></span><span class="p">Ask</span></li>
-          <li><span class="d"><b>Gorditas</b><small>Thick, griddled, stuffed to order</small></span><span class="p">Ask</span></li>
-          <li><span class="d"><b>Sopes &amp; Huaraches</b><small>Hand-formed masa, beans, salsa, queso</small></span><span class="p">Ask</span></li>
-          <li><span class="d"><b>Pechuga Empanizada</b><small>Breaded chicken plate with rice and beans</small></span><span class="p">Ask</span></li>
-        </ul>
+      <div style="margin-top:26px">
+        <a class="btn btn--chili btn--lg" href="menu.html">See the full menu →</a>
       </div>
-
-      <div class="menu__col reveal">
-        <h3>Desayuno &amp; Bebidas</h3>
-        <ul>
-          <li><span class="d"><b>Huevos al Gusto</b><small>Rancheros, a la mexicana, or con jamón</small></span><span class="p">Ask</span></li>
-          <li><span class="d"><b>Chilaquiles</b><small>Red or green, with crema and queso fresco</small></span><span class="p">Ask</span></li>
-          <li><span class="d"><b>Aguas Frescas</b><small>Made in-house — ask what’s fresh today</small></span><span class="p">Ask</span></li>
-          <li><span class="d"><b>Cafecito</b><small>The way it should be</small></span><span class="p">Ask</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="menu__foot reveal">
-      <a class="btn btn--marigold btn--lg" href="tel:+17139879391">Call (713) 987-9391</a>
-      <a class="btn btn--ghost btn--lg" href="https://www.doordash.com/store/taqueria-tres-marias-23657611" target="_blank" rel="noopener">Order on DoorDash</a>
-      <p>Prices are from our current online menu and can change — call us for today’s specials.</p>
     </div>
   </section>
 
-  <!-- ── REVIEWS ───────────────────────────────────────── -->
-  <section class="reviews" id="reviews">
+  <!-- GALLERY PREVIEW -->
+  <section class="psec psec--dark">
+    <div class="psec__inner">
+      <div class="psec__head">
+        <p class="kicker kicker--light reveal">La comida</p>
+        <h2 class="h2 h2--light reveal">Have a look<br><em>at the food.</em></h2>
+      </div>
+      <div class="gallery reveal">
+        <a class="gallery__item gallery__item--big" href="images/hero.jpg" data-lightbox><img src="images/hero.jpg" alt="Taco spread on a wooden table" loading="lazy"></a>
+        <a class="gallery__item" href="images/pastor.jpg" data-lightbox><img src="images/pastor.jpg" alt="Tacos al pastor" loading="lazy"></a>
+        <a class="gallery__item" href="images/birria.jpg" data-lightbox><img src="images/birria.jpg" alt="Quesabirria with consomé" loading="lazy"></a>
+        <a class="gallery__item" href="images/basket.jpg" data-lightbox><img src="images/basket.jpg" alt="Stack of handmade corn tortillas in a basket" loading="lazy"></a>
+        <a class="gallery__item" href="images/drinks.jpg" data-lightbox><img src="images/drinks.jpg" alt="Aguas frescas in glass jars" loading="lazy"></a>
+        <a class="gallery__item" href="images/menudo.jpg" data-lightbox><img src="images/menudo.jpg" alt="Bowl of menudo with garnishes" loading="lazy"></a>
+        <a class="gallery__item" href="images/counter.jpg" data-lightbox><img src="images/counter.jpg" alt="Al pastor trompo at the counter" loading="lazy"></a>
+        <a class="gallery__item" href="images/takeout.jpg" data-lightbox><img src="images/takeout.jpg" alt="A large takeout order ready to go" loading="lazy"></a>
+      </div>
+      <div style="margin-top:26px">
+        <a class="btn btn--marigold btn--lg" href="gallery.html">Open the full gallery →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
     <div class="reviews__head">
       <p class="kicker reveal">La gente dice</p>
       <h2 class="h2 reveal">369 reviews.<br><em>4.7 stars.</em></h2>
     </div>
-
     <div class="review-grid">
       <blockquote class="review reveal">
         <div class="review__stars">★★★★★</div>
@@ -229,81 +200,35 @@
         <footer>Google review · Sept 2026</footer>
       </blockquote>
     </div>
-
-    <div class="reviews__cta reveal">
-      <a class="btn btn--outline btn--lg" href="https://www.google.com/maps/search/?api=1&amp;query=Taqueria+Tres+Marias+10414+Telephone+Rd+Houston+TX" target="_blank" rel="noopener">Read all 369 reviews →</a>
-    </div>
   </section>
 
-  <!-- ── VISIT ─────────────────────────────────────────── -->
-  <section class="visit" id="visit">
-    <div class="visit__grid">
-      <div>
+  <!-- ORDER -->
+  <section class="psec psec--paper2">
+    <div class="psec__inner split">
+      <div class="split__body">
         <p class="kicker reveal">Ven a comer</p>
         <h2 class="h2 reveal">Come hungry.<br><em>Leave happy.</em></h2>
-
-        <div class="visit__block reveal">
-          <h3>Where</h3>
-          <p>10414 Telephone Rd<br>Houston, TX 77075</p>
-          <a class="arrow-link" href="https://www.google.com/maps/search/?api=1&amp;query=Taqueria+Tres+Marias+10414+Telephone+Rd+Houston+TX" target="_blank" rel="noopener">Get directions →</a>
-        </div>
-
-        <div class="visit__block reveal">
-          <h3>Call</h3>
-          <p><a href="tel:+17139879391">(713) 987-9391</a><br><a href="mailto:tresmariasmexico7@gmail.com">tresmariasmexico7@gmail.com</a></p>
-        </div>
-
-        <div class="visit__block reveal">
-          <h3>Hours</h3>
-          <table class="hours">
-            <tr><th>Monday</th><td>8:00 AM – 6:00 PM</td></tr>
-            <tr><th>Tue – Sun</th><td>8:00 AM – 9:30 PM</td></tr>
-          </table>
-          <p class="hours__note">Hours can shift on holidays — a quick call always confirms it.</p>
+        <p class="reveal">10414 Telephone Rd, Houston, TX 77075 — south of Hobby Airport, right on Telephone. Dine in with us, call ahead for pick-up at the drive-thru, or order delivery.</p>
+        <p class="reveal"><strong>Monday</strong> 8:00 AM – 6:00 PM<br><strong>Tue – Sun</strong> 8:00 AM – 9:30 PM</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:6px">
+          <a class="btn btn--chili btn--lg" href="tel:+17139879391">Call to order</a>
+          <a class="btn btn--outline btn--lg" href="https://www.doordash.com/store/taqueria-tres-marias-23657611" target="_blank" rel="noopener">DoorDash</a>
+          <a class="btn btn--outline btn--lg" href="visit.html">Hours &amp; directions</a>
         </div>
       </div>
-
-      <aside class="order-card reveal">
-        <span class="order-card__tag">Dine-in · Takeout · Delivery</span>
-        <h3>Order in 30 seconds.</h3>
-        <p>Call us and we’ll have it hot and ready at the counter. Prefer delivery? Find us on DoorDash.</p>
-        <a class="btn btn--chili btn--lg btn--full" href="tel:+17139879391">Call to order</a>
-        <a class="btn btn--outline btn--lg btn--full" href="https://www.doordash.com/store/taqueria-tres-marias-23657611" target="_blank" rel="noopener">DoorDash</a>
-        <div class="order-card__social">
-          <a href="https://www.instagram.com/tres_marias_taqueria" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.facebook.com/TresMariasMatamoros" target="_blank" rel="noopener">Facebook</a>
-          <a href="https://www.tiktok.com/@taqueriatresmarias1" target="_blank" rel="noopener">TikTok</a>
-        </div>
-      </aside>
+      <figure class="split__media reveal"><img src="images/interior.jpg" alt="Warm, colorful interior of the taqueria with papel picado overhead" loading="lazy"></figure>
     </div>
   </section>
 
-  <!-- ── FAQ ───────────────────────────────────────────── -->
-  <section class="faq">
-    <div class="faq__inner">
-      <p class="kicker reveal">Preguntas</p>
-      <h2 class="h2 reveal">Good to know.</h2>
-      <div class="faq__list">
-        <details class="reveal">
-          <summary>Are the tortillas really handmade?</summary>
-          <p>Yes — corn tortillas pressed and cooked on the comal, flour tortillas rolled by hand. It’s the part of the meal we’re proudest of.</p>
-        </details>
-        <details class="reveal">
-          <summary>Do you take call-in orders?</summary>
-          <p>We do. Call <a href="tel:+17139879391">(713) 987-9391</a>, tell us what you want, and we’ll have it waiting at the counter.</p>
-        </details>
-        <details class="reveal">
-          <summary>Is there delivery?</summary>
-          <p>Yes, through <a href="https://www.doordash.com/store/taqueria-tres-marias-23657611" target="_blank" rel="noopener">DoorDash</a>. For the best version of everything, come sit down with us.</p>
-        </details>
-        <details class="reveal">
-          <summary>When do you serve menudo?</summary>
-          <p>Menudo is a weekend tradition here. Call ahead on the day you’re coming and we’ll tell you exactly what’s in the pot.</p>
-        </details>
-        <details class="reveal">
-          <summary>Where exactly are you?</summary>
-          <p>10414 Telephone Rd, Houston, TX 77075 — south of Hobby Airport, right on Telephone. <a href="https://www.google.com/maps/search/?api=1&amp;query=Taqueria+Tres+Marias+10414+Telephone+Rd+Houston+TX" target="_blank" rel="noopener">Open the map</a>.</p>
-        </details>
+  <section class="band">
+    <div class="band__inner">
+      <div>
+        <h2>Any day is a taco day.</h2>
+        <p>Open seven days a week from 8 AM. Call ahead and we’ll have it waiting.</p>
+      </div>
+      <div class="band__actions">
+        <a class="btn btn--chili btn--lg" href="tel:+17139879391">(713) 987-9391</a>
+        <a class="btn btn--ghost btn--lg" href="menu.html">See the menu</a>
       </div>
     </div>
   </section>
@@ -317,10 +242,11 @@
     </div>
     <div class="footer__col">
       <h4>Explore</h4>
-      <a href="#story">Nuestra Casa</a>
-      <a href="#menu">Menu</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#visit">Visit</a>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="story.html">Nuestra Casa</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="visit.html">Visit</a>
     </div>
     <div class="footer__col">
       <h4>Contact</h4>
@@ -341,6 +267,7 @@
   </div>
 </footer>
 
+<div class="lightbox" id="lightbox"><button class="lightbox__close" aria-label="Close">×</button><img alt=""></div>
 <script src="script.js"></script>
 </body>
 </html>

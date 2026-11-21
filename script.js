@@ -1,4 +1,4 @@
-/* Tres Marias Taqueria — interactions */
+/* Tres Marias Taqueria — interactions (shared by all pages) */
 (function () {
   "use strict";
 
@@ -6,28 +6,30 @@
   var burger = document.getElementById("burger");
   var sheet = document.getElementById("sheet");
 
-  var onScroll = function () {
-    nav.classList.toggle("nav--solid", window.scrollY > 30);
-  };
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  if (nav) {
+    var onScroll = function () { nav.classList.toggle("nav--solid", window.scrollY > 30); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
 
-  var closeSheet = function () {
-    sheet.classList.remove("is-open");
-    burger.setAttribute("aria-expanded", "false");
-    document.body.style.overflow = "";
-  };
-  burger.addEventListener("click", function () {
-    var open = sheet.classList.toggle("is-open");
-    burger.setAttribute("aria-expanded", open ? "true" : "false");
-    document.body.style.overflow = open ? "hidden" : "";
-  });
-  sheet.querySelectorAll("a").forEach(function (a) {
-    a.addEventListener("click", closeSheet);
-  });
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeSheet();
-  });
+  if (burger && sheet) {
+    var closeSheet = function () {
+      sheet.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    };
+    burger.addEventListener("click", function () {
+      var open = sheet.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.style.overflow = open ? "hidden" : "";
+    });
+    sheet.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", closeSheet);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeSheet();
+    });
+  }
 
   var els = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
@@ -48,6 +50,30 @@
     els.forEach(function (el) { io.observe(el); });
   } else {
     els.forEach(function (el) { el.classList.add("is-in"); });
+  }
+
+  /* ── lightbox ── */
+  var lb = document.getElementById("lightbox");
+  if (lb) {
+    var lbImg = lb.querySelector("img");
+    var closeBtn = lb.querySelector(".lightbox__close");
+    var close = function () {
+      lb.classList.remove("is-open");
+      document.body.style.overflow = "";
+    };
+    document.querySelectorAll("[data-lightbox]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var inner = a.querySelector("img");
+        lbImg.src = a.getAttribute("href");
+        lbImg.alt = inner ? inner.alt : "";
+        lb.classList.add("is-open");
+        document.body.style.overflow = "hidden";
+      });
+    });
+    if (closeBtn) closeBtn.addEventListener("click", close);
+    lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
   }
 
   var year = document.getElementById("year");
