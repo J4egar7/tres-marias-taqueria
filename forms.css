@@ -1,0 +1,159 @@
+/* ============================================================
+   TRES MARIAS — ordering page
+   ============================================================ */
+
+.pagehero--tight{padding-bottom:clamp(36px,5vw,58px)}
+
+.orderwrap{
+  display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.72fr);
+  gap:clamp(18px,3vw,34px);align-items:start;
+}
+
+/* filter tabs */
+.ofilter{
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+  margin-bottom:16px;
+}
+.ofilter__label{
+  font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);margin-right:4px;
+}
+.otab{
+  padding:9px 16px;border-radius:999px;
+  border:2px solid var(--plum);background:transparent;
+  font-size:.76rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--plum);cursor:pointer;transition:background .2s,color .2s,transform .2s;
+}
+.otab:hover{transform:translateY(-1px)}
+.otab.is-on{background:var(--plum);color:var(--paper)}
+
+/* item rows */
+.orderlist{display:grid;gap:12px}
+.oitem{
+  display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:center;
+  background:#fff;border:2.5px solid var(--plum);border-radius:16px;
+  padding:12px 16px 12px 12px;
+  box-shadow:6px 6px 0 var(--paper-3);
+  transition:transform .25s var(--ease),box-shadow .25s,opacity .25s;
+}
+.oitem:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--marigold)}
+.oitem.is-hidden{display:none}
+.oitem__img{border-radius:10px;overflow:hidden;background:var(--plum);aspect-ratio:1/1}
+.oitem__img img{width:100%;height:100%;object-fit:cover}
+.oitem__body h3{
+  font-family:var(--font-display);font-size:1.02rem;margin:0 0 4px;
+  color:var(--plum);letter-spacing:.01em;
+}
+.oitem__body p{margin:0 0 8px;font-size:.82rem;color:#5a463a;line-height:1.45;max-width:44ch}
+.oitem__price{font-family:var(--font-display);font-size:.84rem;color:var(--chili)}
+.oitem__price--ask{color:var(--muted)}
+
+/* qty stepper */
+.qty{
+  display:flex;align-items:center;gap:2px;
+  border:2px solid var(--plum);border-radius:999px;padding:3px;
+  background:var(--paper);
+}
+.qty__btn{
+  width:32px;height:32px;border-radius:50%;
+  display:grid;place-items:center;
+  font-size:1.05rem;font-weight:700;line-height:1;
+  color:var(--plum);cursor:pointer;transition:background .2s,color .2s;
+}
+.qty__btn:hover{background:var(--chili);color:#fff}
+.qty__n{
+  min-width:26px;text-align:center;
+  font-family:var(--font-display);font-size:.9rem;color:var(--plum);
+}
+
+/* summary / cart */
+.summary{
+  position:sticky;top:110px;
+  background:#fff;border:2.5px solid var(--plum);border-radius:20px;
+  padding:clamp(20px,2.6vw,28px);
+  box-shadow:9px 9px 0 var(--chili);
+  display:grid;gap:10px;
+}
+.summary--tres{color:var(--ink)}
+.summary__tag{
+  justify-self:start;
+  font-size:.56rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teal);background:rgba(20,105,94,.1);
+  padding:5px 11px;border-radius:999px;
+}
+.summary__h{
+  font-family:var(--font-display);font-size:1.5rem;line-height:1;
+  margin:2px 0 4px;color:var(--plum);
+}
+.cart{border-top:1px dashed rgba(36,22,15,.2);padding-top:8px}
+.cart__empty{margin:6px 0;font-size:.82rem;color:var(--muted)}
+.cart__list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.cart__list li{
+  display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:baseline;
+  padding:9px 0;border-bottom:1px dashed rgba(36,22,15,.16);
+  font-size:.84rem;
+}
+.cart__list li.is-ask{opacity:.75}
+.cart__name{color:#3a2a21}
+.cart__name b{color:var(--plum);font-weight:700}
+.cart__qty{
+  font-size:.74rem;font-weight:800;color:var(--chili);
+  background:rgba(228,80,43,.1);border-radius:6px;padding:1px 7px;
+}
+.cart__amt{font-family:var(--font-display);font-size:.8rem;color:var(--plum)}
+
+.summary__total{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:10px 0 2px;border-top:2px solid var(--plum);
+  font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+}
+.summary__total b{font-family:var(--font-display);font-size:1.6rem;color:var(--chili);letter-spacing:0}
+
+/* pickup / delivery toggle */
+.toggle{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--plum);border-radius:999px;padding:3px;background:var(--paper)}
+.toggle__btn{
+  padding:9px 8px;border-radius:999px;border:0;background:transparent;
+  font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);cursor:pointer;transition:background .2s,color .2s;
+}
+.toggle__btn.is-on{background:var(--plum);color:var(--paper)}
+
+/* fields */
+.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.field{display:grid;gap:5px}
+.field > span{
+  font-size:.6rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);
+}
+.field input{
+  width:100%;font:inherit;font-size:.88rem;color:var(--ink);
+  background:var(--paper);border:2px solid rgba(43,21,18,.22);border-radius:10px;
+  padding:10px 12px;transition:border-color .2s,box-shadow .2s;
+}
+.field input:focus{outline:none;border-color:var(--plum);box-shadow:0 0 0 3px rgba(242,163,60,.4)}
+
+.hint{font-size:.76rem;color:var(--muted);margin:8px 0 0;line-height:1.55}
+.hint--tight{margin:0;font-size:.74rem}
+.hint--center{text-align:center;max-width:44ch;margin:8px auto 0}
+.hint a{color:var(--chili);text-decoration:underline;text-underline-offset:3px}
+.hint b{color:var(--plum)}
+
+.notice{
+  display:none;
+  margin:6px 0 0;padding:13px 14px;border-radius:12px;
+  background:rgba(242,163,60,.18);border:2px solid var(--marigold);
+  font-size:.84rem;color:#3a2a12;line-height:1.55;
+}
+.notice.is-on{display:block}
+.notice b{color:var(--plum)}
+
+@media (max-width:1000px){
+  .orderwrap{grid-template-columns:1fr}
+  .summary{position:static}
+}
+@media (max-width:620px){
+  .oitem{grid-template-columns:80px 1fr;grid-template-areas:"img body" "qty qty";gap:12px}
+  .oitem__img{grid-area:img}
+  .oitem__body{grid-area:body}
+  .qty{grid-area:qty;justify-self:end}
+  .fieldrow{grid-template-columns:1fr}
+}

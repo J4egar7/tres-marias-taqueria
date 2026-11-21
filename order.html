@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order Online — Tres Marias Taqueria, Houston TX</title>
+<meta name="description" content="Build your order from the Tres Marias menu — quesabirria, tacos al pastor, parrillada and more. Pick-up at the drive-thru or delivery. Call (713) 987-9391.">
+<meta name="theme-color" content="#2b1512">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+<link rel="stylesheet" href="forms.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23e4502b'/><text y='72' x='50' text-anchor='middle' font-family='Georgia,serif' font-weight='bold' font-size='58' fill='%23fbf1df'>3</text></svg>">
+</head>
+<body>
+
+<div class="papel" aria-hidden="true">
+  <svg viewBox="0 0 1200 42" preserveAspectRatio="none">
+    <defs><pattern id="pp" x="0" y="0" width="120" height="42" patternUnits="userSpaceOnUse">
+      <path d="M0 0h120v10l-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8-10-8-10 8z" fill="currentColor"/>
+      <circle cx="30" cy="27" r="4" fill="currentColor"/><circle cx="90" cy="27" r="4" fill="currentColor"/>
+      <path d="M52 20h16l-8 14z" fill="currentColor"/>
+    </pattern></defs>
+    <rect width="1200" height="42" fill="url(#pp)"/>
+  </svg>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html"><span class="brand__num">3</span><span class="brand__txt">Tres Marias<em>Taqueria · Houston</em></span></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="story.html">Nuestra Casa</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="order.html" class="is-active">Order</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+  <a class="btn btn--chili" href="tel:+17139879391">(713) 987-9391</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="sheet" id="sheet">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="story.html">Nuestra Casa</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="order.html" class="is-active">Order</a>
+  <a href="visit.html">Visit</a>
+  <a class="sheet__cta" href="tel:+17139879391">Call to order →</a>
+</div>
+
+<main>
+  <section class="pagehero pagehero--tight">
+    <div class="pagehero__bg"><img src="images/hero.jpg" alt=""></div>
+    <div class="pagehero__inner">
+      <p class="crumb"><a href="index.html">Home</a> / <span>Order</span></p>
+      <h1>Order online.</h1>
+      <p class="pagehero__lede">Tap the + next to what you want, then send it in. Pick-up at the drive-thru or delivery — we’ll have it hot.</p>
+      <ul class="pagehero__meta">
+        <li>Pick-up or delivery</li>
+        <li>Open 7 days</li>
+        <li>Handmade tortillas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="psec psec--paper2">
+    <div class="psec__inner orderwrap">
+
+      <div class="orderlist">
+
+        <div class="ofilter" role="group" aria-label="Menu filter">
+          <span class="ofilter__label">Show</span>
+          <button class="otab is-on" type="button" data-cat="all">Everything</button>
+          <button class="otab" type="button" data-cat="tacos">Tacos</button>
+          <button class="otab" type="button" data-cat="platos">Platos</button>
+          <button class="otab" type="button" data-cat="extras">Extras</button>
+        </div>
+
+        <article class="oitem" data-cat="tacos" data-name="Quesabirria" data-price="13.99">
+          <div class="oitem__img"><img src="images/birria.jpg" alt="Quesabirria tacos with consomé" loading="lazy"></div>
+          <div class="oitem__body">
+            <h3>Quesabirria</h3>
+            <p>Four griddled birria tacos with cheese, onion, cilantro and consomé.</p>
+            <span class="oitem__price">$13.99</span>
+          </div>
+          <div class="qty" data-qty>
+            <button type="button" class="qty__btn" data-step="-1" aria-label="Remove one">−</button>
+            <output class="qty__n" data-qty-n>0</output>
+            <button type="button" class="qty__btn" data-step="1" aria-label="Add one">+</button>
+          </div>
+        </article>
+
+        <article class="oitem" data-cat="tacos" data-name="Tacos de Pastor" data-price="12.99">
+          <div class="oitem__img"><img src="images/pastor.jpg" alt="Tacos al pastor" loading="lazy"></div>
+          <div class="oitem__body">
+            <h3>Tacos de Pastor</h3>
+            <p>Carved off the trompo with pineapple, onion and cilantro.</p>
+            <span class="oitem__price">$12.99</span>
+          </div>
+          <div class="qty" data-qty>
+            <button type="button" class="qty__btn" data-step="-1" aria-label="Remove one">−</button>
+            <output class="qty__n" data-qty-n>0</output>
+            <button type="button" class="qty__btn" data-step="1" aria-label="Add one">+</button>
+          </div>
+        </article>
+
+        <article class="oitem" data-cat="tacos" data-name="Birria Tacos" data-price="13.99">
+          <div class="oitem__img"><img src="images/counter.jpg" alt="Birria tacos being prepared at the counter" loading="lazy"></div>
+          <div class="oitem__body">
+            <h3>Birria Tacos</h3>
+            <p>Slow-braised beef, onion, cilantro and lime on corn tortillas.</p>
+            <span class="oitem__price">$13.99</span>
+          </div>
+          <div class="qty" data-qty>
+            <button type="button" class="qty__btn" data-step="-1" aria-label="Remove one">−</button>
+            <output class="qty__n" data-qty-n>0</output>
+            <button type="button" class="qty__btn" data-step="1" aria-label="Add one">+</button>
+          </div>
+        </article>
+
+        <article class="oitem" data-cat="platos" data-name="Parrillada" data-price="19.99">
+          <div class="oitem__img"><img src="images/interior.jpg" alt="Parrillada for the table"></div>
+          <div class="oitem__body">
+            <h3>Parrillada</h3>
+            <p>For the table — grilled meats, tortillas and all the fixings.</p>
+            <span class="oitem__price">$19.99</span>
+          </div>
+          <div class="qty" data-qty>
+            <button type="button" class="qty__btn" data-step="-1" aria-label="Remove one">−</button>
+            <output class="qty__n" data-qty-n>0</output>
+            <button type="button" class="qty__btn" data-step="1" aria-label="Add one">+</button>
+          </div>
+        </article>
+
+        <article class="oitem" data-cat="platos" data-name="Quesadilla Grande" data-price="12.99">
+          <div class="oitem__img"><img src="images/gorditas.jpg" alt="Quesadilla with salsa and crema" loading="lazy"></div>
+          <div class="oitem__body">
+            <h3>Quesadilla Grande</h3>
+            <p>Loaded and melted, with salsa and crema on the side.</p>
+            <span class="oitem__price">$12.99</span>
+          </div>
+          <div class="qty" data-qty>
+            <button type="button" class="qty__btn" data-step="-1" aria-label="Remove one">−</button>
+            <output class="qty__n" data-qty-n>0</output>
+            <button type="button" class="qty__btn" data-step="1" aria-label="Add one">+</button>
+          </div>
+        </article>
+
+        <article class="oitem" data-cat="platos" data-name="Burrito" data-price="12.99">
+          <div class="oitem__img"><img src="images/tortillas.jpg" alt="Burrito on a handmade tortilla" loading="lazy"></div>
+          <div class="oitem__body">
+            <h3>Burrito</h3>
+            <p>Rice, beans and your choice of meat, folded and griddled.</p>
+            <span class="oitem__price">$12.99</span>
+          </div>
+          <div class="qty" data-qty>
+            <button type="button" class="qty__btn" data-step="-1" aria-label="Remove one">−</button>
+            <output class="qty__n" data-qty-n>0</output>
+            <button type="button" class="qty__btn" data-step="1" aria-label="Add one">+</button>
+          </div>
+        </article>
+
+        <article class="oitem" data-cat="extras" data-name="Tortillas (dozen)" data-price="0">
+          <div class="oitem__img"><img src="images/basket.jpg" alt="Stack of handmade corn tortillas" loading="lazy"></div>
+          <div class="oitem__body">
+            <h3>Tortillas by the dozen</h3>
+            <p>Corn pressed on the comal, flour rolled by hand. Ask for today’s price.</p>
+            <span class="oitem__price oitem__price--ask">Ask</span>
+          </div>
+          <div class="qty" data-qty>
+            <button type="button" class="qty__btn" data-step="-1" aria-label="Remove one">−</button>
+            <output class="qty__n" data-qty-n>0</output>
+            <button type="button" class="qty__btn" data-step="1" aria-label="Add one">+</button>
+          </div>
+        </article>
+
+        <article class="oitem" data-cat="extras" data-name="Aguas Frescas" data-price="0">
+          <div class="oitem__img"><img src="images/drinks.jpg" alt="Aguas frescas in glass jars" loading="lazy"></div>
+          <div class="oitem__body">
+            <h3>Aguas Frescas</h3>
+            <p>Made in-house — ask what’s fresh today. Price at the counter.</p>
+            <span class="oitem__price oitem__price--ask">Ask</span>
+          </div>
+          <div class="qty" data-qty>
+            <button type="button" class="qty__btn" data-step="-1" aria-label="Remove one">−</button>
+            <output class="qty__n" data-qty-n>0</output>
+            <button type="button" class="qty__btn" data-step="1" aria-label="Add one">+</button>
+          </div>
+        </article>
+
+        <p class="hint">Serving tacos, platos and antojitos — the <a href="menu.html">full menu is here</a>. Items marked <b>Ask</b> are priced at the counter.</p>
+      </div>
+
+      <aside class="summary summary--tres">
+        <span class="summary__tag">Your order</span>
+        <h3 class="summary__h">Carrito</h3>
+
+        <div class="cart" id="cart">
+          <p class="cart__empty" id="cartEmpty">Nothing in the cart yet — tap a + to start.</p>
+          <ul class="cart__list" id="cartList"></ul>
+        </div>
+
+        <div class="summary__total"><span>Subtotal</span><b id="cartTotal">$0.00</b></div>
+
+        <div class="toggle" role="group" aria-label="Pick-up or delivery">
+          <button class="toggle__btn is-on" type="button" data-mode="pickup">Pick-up</button>
+          <button class="toggle__btn" type="button" data-mode="delivery">Delivery</button>
+        </div>
+        <p class="hint hint--tight" id="modeHint">Pick-up at the drive-thru on Telephone Rd. Ready in about 20 minutes.</p>
+
+        <div class="fieldrow">
+          <label class="field"><span>Name</span><input type="text" id="oname" placeholder="Maria"></label>
+          <label class="field"><span>Phone</span><input type="tel" id="ophone" placeholder="(713) 555-0134"></label>
+        </div>
+
+        <button class="btn btn--chili btn--full" type="button" id="placeOrder">Place order</button>
+        <p class="notice" id="notice" role="status"></p>
+
+        <a class="btn btn--outline btn--full" href="tel:+17139879391" style="margin-top:4px">Call (713) 987-9391</a>
+
+        <p class="hint hint--center">
+          This ordering page is a preview — it isn’t connected to the kitchen yet.
+          To order right now, call us or use
+          <a href="https://www.doordash.com/store/taqueria-tres-marias-23657611" target="_blank" rel="noopener">DoorDash</a>.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="band__inner">
+      <div>
+        <h2>Rather just call?</h2>
+        <p>It’s the fastest way. We’ll tell you exactly how long it’ll be.</p>
+      </div>
+      <div class="band__actions">
+        <a class="btn btn--chili btn--lg" href="tel:+17139879391">(713) 987-9391</a>
+        <a class="btn btn--ghost btn--lg" href="menu.html">See the menu</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <span class="brand__txt brand__txt--lg">Tres Marias<em>Taqueria · Houston</em></span>
+      <p>Family-run Mexican kitchen on Telephone Road.<br>Handmade tortillas, every single day.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="story.html">Nuestra Casa</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="order.html" class="is-active">Order online</a>
+      <a href="visit.html">Visit</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="tel:+17139879391">(713) 987-9391</a>
+      <a href="mailto:tresmariasmexico7@gmail.com">Email us</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Taqueria+Tres+Marias+10414+Telephone+Rd+Houston+TX" target="_blank" rel="noopener">Directions</a>
+    </div>
+    <div class="footer__col">
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/tres_marias_taqueria" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/TresMariasMatamoros" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.tiktok.com/@taqueriatresmarias1" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year">2026</span> Tres Marias Taqueria · 10414 Telephone Rd, Houston, TX</span>
+    <span class="footer__tag">¡Buen provecho!</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><button class="lightbox__close" aria-label="Close">×</button><img alt=""></div>
+<script src="script.js"></script>
+<script src="order.js"></script>
+</body>
+</html>
